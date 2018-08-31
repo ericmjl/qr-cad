@@ -11,4 +11,4 @@ dependencies:
 - ipykernel
 - pip:
   - solidpython
-  - pyqrcode
+  - git+https://github.com/heuer/pyqrcode.git
