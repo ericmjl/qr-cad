@@ -24,7 +24,9 @@ A disadvantage of a command-line interface is that it requires the end user to b
 
 In the name of "good software engineering", we are going to first organize our functions a bit, and prepare to build this into a Python package that can be easily distributed. The final directory structure we are targeting is as follows:
 
-```
+```bash
+$ tree
+.
 ├── environment.yml
 ├── qrwifi
 │   ├── __init__.py
