@@ -29,7 +29,7 @@ def png_b64(qr, scale: int = 10):
     return qr.png_data_uri(scale=scale)
 
 
-def arr2scad(arr, path):
+def arr2scad(arr, HEIGHT:int = 2):
     """
     Convert an array `arr` into valid OpenSCAD text.
     """
@@ -43,5 +43,4 @@ def arr2scad(arr, path):
     base_plate = color('white')(cube(size=(arr.shape[0] * SCALE, arr.shape[1] * SCALE, HEIGHT / 2)))
     qrobj = union()(*cubes, base_plate)
 
-    with open(path, 'w+') as f:
-        f.write(scad_render(qrobj))
+    return scad_render(qrobj)
