@@ -4,6 +4,7 @@
 *.png
 *.scad
 *.stl
+*settings.json
 
 ### Python ###
 # Byte-compiled / optimized / DLL files
