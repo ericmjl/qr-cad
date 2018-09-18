@@ -3,7 +3,7 @@ import pyqrcode as pq
 
 def main():
     message = """
-https://my.bible.com/bible/111/NUM.6.23-26
+https://my.bible.com/bible/47/NUM.6.24-26
 """
     qr = pq.create(message)
     scad = arr2scad(qr2array(qr))
